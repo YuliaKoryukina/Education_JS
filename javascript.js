@@ -56,6 +56,20 @@ function generatePassword(num) {
   return password;
 }
 console.log("Твой пароль:" + " " + generatePassword(10));
+//Задача 6
+function CheckOperation (a,b,c,result,predictedValue) {
+  a = 1;
+  b = 3;
+  c = 4;
+  result =  Boolean (a + b && (c * a)) || ((c / a) && b - 1);
+  predictedValue = true;
+  if (result === predictedValue) {
+    return true
+  }
+  else 
+  return false;
+}
+console.log(CheckOperation());
 //Задача 7
 function educationRating (assessment) {
     if (typeof assessment !== "number")
